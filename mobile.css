@@ -1,0 +1,23 @@
+@media only screen and (max-width: 768px) {
+    .header{
+        height: 270px;
+        flex-direction: column;
+    }
+
+    .left-block{
+        width: 100%;
+        flex-direction: column;
+    }
+    .message-block{
+        margin-right: 20px;
+    }
+    .body{
+        flex-direction: column;
+    }
+    .body-left{
+        width: 90%;
+    }
+    .body-right{
+        width: 100%;
+    }
+}
