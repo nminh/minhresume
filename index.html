@@ -103,7 +103,7 @@
             background-color: #f8f9fb;
             min-height: 500px;
         }
-        .body-right>h2:first-child{
+        .body-right h2{
             margin-top: 30px;
             margin-left: 30px;
             color: #d73632;
@@ -130,6 +130,36 @@
             height: 110px;
             background-color: #6e14c8;
             margin-left: 16px;
+        }
+        .number-description{
+            width: 70px;
+            font-family: "Montserrat", sans-serif;
+            margin-top: 10px;
+        }
+        .number{
+            color: #cbd1de;
+            margin-left: 20px;
+        }
+        .blank-bar{
+            width: 100%;
+            height: 5px;
+            background-color: #cbd1de;
+            margin: 0 20px;
+        }
+        .fill-bar{
+            background-color: #6e14c8;
+            height: 5px;
+            width: 90%;
+        }
+        .portfolio-images{
+            width: 205px;
+            height: 193px;
+            margin: 20px;
+        }
+        .portfolio{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
         }
     </style>
 </head>
@@ -179,9 +209,58 @@
             <h2 style="margin-left: 20px">About me</h2>
             <p style="color:#ccc">WHAT I LOVE</p>
             <p style="line-height: 28px;">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, quis consequat nulla effi citur at. Maecenas sed massa tristique. Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
+            <div style="display: flex">
+                <div style="display: flex; flex: 1">
+                    <div class="number" style="font-size: 48px;">3</div>
+                    <div class="number-description" style="font-size: 14px">Coder degrees</div>
+                </div>
+                <div style="display: flex; flex: 1">
+                    <div class="number" style="font-size: 48px">25</div>
+                    <div class="number-description" style="font-size: 14px">Projects completed</div>
+                </div>
+            </div>
+            <div style="display: flex">
+                <div style="display: flex; flex: 1">
+                    <div class="number" style="font-size: 48px;">311</div>
+                    <div class="number-description" style="font-size: 14px">Satisfied clients</div>
+                </div>
+                <div style="display: flex; flex: 1">
+                    <div class="number" style="font-size: 48px">2</div>
+                    <div class="number-description" style="font-size: 14px">Design courses</div>
+                </div>
+            </div>
+            <div style="width:35px; height:10px; border-radius: 5px; background-color: #6e14c8;
+            margin-top: 50px; margin-left: 20px"></div>
+            <h2 style="margin-left: 20px">My passions</h2>
+            <p style="color:#ccc">WHAT I LOVE</p>
+            <div style="width:35px; height:10px; border-radius: 5px; background-color: #6e14c8;
+            margin-top: 50px; margin-left: 20px"></div>
+            <h2 style="margin-left: 20px">Technical skills</h2>
+            <p style="color:#ccc">I AM GOOD AT</p>
+            <h4>HTML & CSS3</h4>
+            <p>Cras at diam sit amet massa tempor porta semper eget ex. Mauris ornare lacus in efficitur volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+            <div class="blank-bar">
+                <div class="fill-bar"></div>
+            </div>
+            <p>HTML</p>
+            <div class="blank-bar">
+                <div class="fill-bar" style="width: 80%"></div>
+            </div>
+            <p>CSS</p>
+            <h4>GRAPHIC DESIGN</h4>
+            <p>Diam sit amet massa tempor porta semper eget ex. Mauris ornare lacus in efficitur volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam congue id odio a maximus.</p>
+            <div class="blank-bar">
+                <div class="fill-bar"></div>
+            </div>
+            <p>PHOTOSHOP</p>
+            <div class="blank-bar">
+                <div class="fill-bar" style="width: 80%"></div>
+            </div>
+            <p>ILLUSTRATOR</p>
         </div>
         <div class="body-right">
+            <div style="width:35px; height:10px; border-radius: 5px; background-color: #6e14c8; 
+            margin-top: 50px; margin-left: 30px"></div>
             <h2>Work Experience</h2>
             <p style="color: #ccc">PREVIOUS JOB</p>
             <h3>JUNIOR PROJECT MANAGER</h3>
@@ -202,7 +281,9 @@
                 <li>Cras ullamcorper, diam ut rutrum duis</li>
                 <li>Aliquam bibendum vitae libero</li>
             </ul>
-            <h3>Education</h3>
+            <div style="width:35px; height:10px; border-radius: 5px; background-color: #6e14c8; 
+            margin-top: 50px; margin-left: 30px"></div>
+            <h2>Education</h2>
             <p style="color: #ccc">ACADEMIC CAREER</p>
             <div style="display: flex;">
                 <div style="margin-left: 50px">
@@ -231,6 +312,18 @@
                     <h6 style="color: #6e14c8">GRADUATED IN MAY 2008 (4 YEARS)</h6>
                 </div>
             </div>
+            <div style="width:35px; height:10px; border-radius: 5px; background-color: #6e14c8; 
+            margin-top: 50px; margin-left: 30px"></div>
+            <h2>Portfolio</h2>
+            <p>MY WORK</p>
+            <div class="portfolio">
+                <img class="portfolio-images" src="https://www.vertiqalteam.com/business-cv/images/portfolio/image-1.jpg" alt="">
+                <img class="portfolio-images" src="https://www.vertiqalteam.com/business-cv/images/portfolio/image-2.jpg" alt="">
+                <img class="portfolio-images" src="https://www.vertiqalteam.com/business-cv/images/portfolio/image-3.jpg" alt="">
+                <img class="portfolio-images" src="https://www.vertiqalteam.com/business-cv/images/portfolio/image-4.jpg" alt="">
+                <img class="portfolio-images" src="https://www.vertiqalteam.com/business-cv/images/portfolio/image-5.jpg" alt="">
+                <img class="portfolio-images" src="https://www.vertiqalteam.com/business-cv/images/portfolio/image-6.jpg" alt="">
+            </div>
             
             
             
@@ -239,4 +332,3 @@
     </div>
 </body>
 </html>
-<!-- Test github -->
